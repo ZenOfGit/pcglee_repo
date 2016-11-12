@@ -1,0 +1,4 @@
+AuthUserFile /app/members/templates/.htpasswd
+AuthName "Please Log In"
+AuthType Basic
+Require valid-user

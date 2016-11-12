@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="pcGlee">
+
+<head>
+    <title>Bands</title>
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- PC Glee Style -->
+    <link rel="stylesheet" href="assets/css/pcglee-style.css">
+    <!-- AngularJS -->
+    <script src="assets/lib/angular.min.js"></script>
+    <!-- jQuery (must be before bootstrap)-->
+    <script src="assets/lib/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap.min.js"></script>
+    <!-- Main Module -->
+    <script src="app/app.js"></script>
+    <!-- Guitar Module -->
+    <script src="app/controllers/guitar-controller.js"></script>
+    <!-- Amp Module -->
+    <script src="app/controllers/amp-controller.js"></script>   
+    <!-- Directives Module -->
+    <script src="app/directives/directives.js"></script> 
+</head>
+ 
+<body>
+    <nav-template></nav-template>
+
+    
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Great Bands</h1>
+
+        </div>
+    </div>
+    <br>
+
+    <section id="jam">
+        <table class="topic">
+            <tr>
+                <td>Jam Bands</td>
+            </tr>
+            <tr>
+                <td class="line"></td>
+            </tr>
+        </table>
+        <ul>
+            <li><a href="http://www.beastieboys.com">Beastie Boys</a></li>
+        </ul>
+    </section>
+
+    <section id="rock">
+        <table class="topic">
+            <tr>
+                <td>Rock Bands</td>
+            </tr>
+            <tr>
+                <td class="line"></td>
+            </tr>
+        </table>
+        <ul>
+            <li><a href="http://www.primusville.com">Primus</a></li>
+            <li><a href="http://www.mule.net">Government Mule</a></li>
+            <li><a href="http://www.beastieboys.com">Beastie Boys</a></li>
+        </ul>
+    </section>
+
+    <section id="jazz">
+        <table class="topic">
+            <tr>
+                <td>Jazz Bands</td>
+            </tr>
+            <tr>
+                <td class="line"></td>
+            </tr>
+        </table>
+        <ul>
+            <li><a href="http://www.mmw.net/">Medeski Martin & Wood</a></li>
+            <li><a href="http://www.herbiehancock.com/home.php">Herbie Hancock</a></li>
+        </ul>
+    </section>
+
+    <section id="friends">
+        <table class="topic">
+            <tr>
+                <td>Friend's Bands</td>
+            </tr>
+            <tr>
+                <td class="line"></td>
+            </tr>
+        </table>
+        <ul>
+            <li><a href="http://musketeergripweed.com/">Musketeer Gripweed</a></li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+    background-color: #303030;
+    font-family: verdana, sans-serif;
+    color: #ADFF2F;
+}
+
+h1 {
+    color: #ADFF2F;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: red;
+}
+
+.nav-pills > li > a:hover {
+    background-color: #37404e;
+}
+
+.nav {
+    background-color: #484848;
+}
+
+.clock {
+    font-size: 24px;
+    color: #ADFF2F;
+}
+.container {
+    margin-left: 20px;
+}
+
+.topic {
+    font-size: 45px;
+    color: #ADFF2F;
+    border: 0px;
+    width: 700px;
+    margin-left: 25px;
+}
+
+.boottopic {
+    font-size: 45px;
+    color: #ADFF2F;
+    border: 0px;
+    width: 100%;
+    padding-left: 25px;
+}
+
+.line {
+    background-color: #CC3300;
+    width: 100%;
+    height: 2px;
+}
+
+.jumbotron {
+    background-color: #484848;
+    font-family: verdana, sans-serif;    
+    border-style: solid;
+}
+
+.panel {
+    background-color: #484848;
+    font-family: verdana, sans-serif;    
+    border-style: solid;
+}
+
+.list-group {
+    background-color: #484848;
+    font-family: verdana, sans-serif;    
+    border-style: solid;
+}
+
+
+.list-group-item {
+    background-color: #484848;
+    font-family: verdana, sans-serif;    
+    border-style: solid;
+}
+
+.navbar-brand > .active > a {
+    color: #ADFF2F;
+}
+
+.icon {
+	display: inline-block;
+	color: #444444;
+  width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.icon-education {
+  /* Using currentColor above lets
+  us use `color` for changing the color
+  of our icons: */
+  color: red;
+  
+  /* The width and height of the SVG
+  was previously set to 1em.
+  This allows us to use `font-size`
+  to change the size of our icon: */
+  font-size: 48px;
+}
+
+.icon-work {
+  /* Using currentColor above lets
+  us use `color` for changing the color
+  of our icons: */
+  color: red;
+  
+  /* The width and height of the SVG
+  was previously set to 1em.
+  This allows us to use `font-size`
+  to change the size of our icon: */
+  font-size: 48px;
+}
+
+.icon-linkedin {
+  /* Using currentColor above lets
+  us use `color` for changing the color
+  of our icons: */
+  color: red;
+  
+  /* The width and height of the SVG
+  was previously set to 1em.
+  This allows us to use `font-size`
+  to change the size of our icon: */
+  font-size: 48px;
+}
+
+.icon-hobbies {
+  /* Using currentColor above lets
+  us use `color` for changing the color
+  of our icons: */
+  color: red;
+  
+  /* The width and height of the SVG
+  was previously set to 1em.
+  This allows us to use `font-size`
+  to change the size of our icon: */
+  font-size: 48px;
+}
