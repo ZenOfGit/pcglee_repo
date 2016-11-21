@@ -9,21 +9,27 @@ angular.module('pcGlee')  //  This works without declaration unlike the controll
         .directive('hulkAndThor', function(){
     return{
         restrict: 'E',
-        templateUrl: 'app/pages/templates/hulk-and-thor.html'
+        templateUrl: 'app/pages/templates/code-ex/hulk-and-thor.html'
         };
     })
         .directive('timeAndDate', function(){
     return{
         restrict: 'E',
-        templateUrl: 'app/pages/templates/time-and-date.html'
+        templateUrl: 'app/pages/templates/code-ex/time-and-date.html'
         };
     })
         .directive('timeAndDate', function(){
     return{
         restrict: 'E',
-        templateUrl: 'app/pages/templates/jake.html'
+        templateUrl: 'app/pages/templates/code-ex/jake.html'
         };
     })    
+        .directive('bingo', function(){
+    return{
+        restrict: 'E',
+        templateUrl: 'app/pages/templates/code-ex/bingo.html'
+        };
+    }) 
         .directive('miamiU', function(){
     return{
         restrict: 'E',

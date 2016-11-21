@@ -40,6 +40,9 @@
             <li ng-class="{ active: views.isSelected(3) }">
             <a href ng-click="views.selectTab(3)">Jake</a>
         </li>
+            <li ng-class="{ active: views.isSelected(4) }">
+            <a href ng-click="views.selectTab(4)">Bingo</a>
+        </li>
         </ul>
     
         <div class="content" ng-show=" views.isSelected(1) ">
@@ -52,6 +55,10 @@
 
         <div class="content" ng-show=" views.isSelected(3) ">
             <jake></jake>
+        </div>
+    
+        <div class="content" ng-show=" views.isSelected(4) ">
+            <bingo></bingo>
         </div>
 
     </section>
