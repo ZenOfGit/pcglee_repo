@@ -89,4 +89,21 @@ angular.module('pcGlee')  //  This works without declaration unlike the controll
         restrict: 'E',
         templateUrl: 'app/pages/templates/hobbies/skiing.html'
         };
-    });
+    })
+        .directive('pedalCard', function(){
+    return {
+        restrict: 'E',
+        templateUrl: 'app/pages/templates/pedal-card.html',
+        scope: {
+            header: "=",  //tell angular we are passing a string, could use = or string
+            icon: "="
+        }
+/*        controller: function($scope){
+            $scope.header = 'Pedal Header';
+        }*/
+/*        controller: function(){
+            this.header = 'Pedal Header';
+        },
+        controllerAs: 'card'*/
+    };
+});
