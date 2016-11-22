@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="pcGlee">
+
+<head>
+    <title>Git Search</title>
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- PC Glee Style -->
+    <link rel="stylesheet" href="assets/css/pcglee-style.css">
+    <!-- AngularJS -->
+    <script src="assets/lib/angular.min.js"></script>
+    <!-- jQuery (must be before bootstrap)-->
+    <script src="assets/lib/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap.min.js"></script>
+    <!-- Main Module -->
+    <script src="app/app.js"></script>
+    <!-- Git Module -->
+    <script src="app/controllers/git-controller.js"></script>
+    <!-- Directives Module -->
+    <script src="app/directives/directives.js"></script>
+</head>
+
+<body>
+    <nav-template></nav-template>
+
+    <br>
+
+    <table border="0" width="700" cellspacing="0" cellpadding="0">
+        <tr>
+            <td><font color="#ADFF2F" size="15">Github Search</td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#CC3300" height="2"></td>
+  </tr>
+</table>
+<br>
+<br>
+
+<div ng-controller="GitController">
+<br>
+Github Search
+<br>
+Using an API that provides github data for any user, youcan search for my proflie and see my current account state.
+<br>
+
+    <form name="searchUser" ng-submit="search(username)">
+        <input type="search" required placeholder="Username to find" ng-model="username" />
+        <input type="submit" value="Search">    
+    </form>
+    
+    <div>
+    <h2>{{user.name}}</h2>
+        <img ng-srv="http://www.gravatar.com/avatar/{{user.gravatar_id}}" title="{{user.name}}">
+    </div>
+    
+    <table>
+        <tr>
+            <thead>
+                <th>Name</th>
+                <th>Stars</th>
+                <th>Language</th>
+            </htead>
+            <tbody>
+                <tr ng-repeat="repo in repos">
+                    <td>{{repo.name}}</td>
+                    <td>{{repo.stargazers_count}}</td>
+                    <td>{{repo.language}}</td>
+                </tr>
+            </tbody>
+        </tr>
+    </table>
+
+</div>
+
+    
+</body>
+</html>
