@@ -28,6 +28,21 @@
     
 <section ng-controller="TabController as views">
     <!-- panel.tab will be a prperty of our controller -->
+            <div class="container">
+            <div class="jumbotron jumbotron-fluid">
+
+
+                <div ng-show=" views.isSelected(1) ">
+                    <img src="assets/images/hg.png" alt="Healthgrades" style="width:317px;height:159px;">
+                </div>
+                <div ng-show=" views.isSelected(2) ">
+                    <img src="assets/images/dunno.jpg" alt="Collaborative" style="width:317px;height:159px;">
+                </div>
+                <div ng-show=" views.isSelected(3) ">
+                    <img src="assets/images/lts.png" alt="Lakes Technology Specialists" style="width:317px;height:159px;">
+                </div>
+            </div
+    
         <ul class="nav nav-pills">
             <!-- If true, set class to active -->
             <li ng-class="{ active: views.isSelected(1) }">
@@ -52,7 +67,7 @@
         <div class="content" ng-show=" views.isSelected(3) ">
             <lts></lts>
         </div>
-
+    </div>
     </section>
     
 </body>
