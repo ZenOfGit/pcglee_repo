@@ -22,6 +22,7 @@ angular.module('pcGlee')
     };
          
         $scope.username = 'zenofgit';
-        $scope.message = 'GitHub Search';
+        $scope.message = 'GitHub Search'; 
+        $scope.repoSortOrder = '-stargazers_count';
 
 }]);
