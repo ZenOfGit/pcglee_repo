@@ -51,7 +51,7 @@ Using an API that provides github data for any user, youcan search for my profli
     
     <div>
     <h2>{{user.name}}</h2>
-        <img ng-srv="http://www.gravatar.com/avatar/{{user.gravatar_id}}" title="{{user.name}}">
+        <img ng-src="{{user.avatar_url}}" title="{{user.name}}" style="width:128px;height:128px;">
     </div>
     
     <table>
