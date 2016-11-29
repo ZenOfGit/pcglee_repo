@@ -81,6 +81,18 @@ h1 {
     color: #ADFF2F;
 }
 
+#gitSearchIn {
+    background-color: #484848;
+    font-family: verdana, sans-serif;    
+    border-style: solid;
+}
+
+#gitSearchButton {
+    background-color: #484848;
+    font-family: verdana, sans-serif;    
+    border-style: solid;
+}
+
 .icon {
 	display: inline-block;
 	color: #444444;
