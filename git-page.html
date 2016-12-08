@@ -4,7 +4,8 @@
 <head>
     <title>Git Search</title>
     <!-- Bootstrap Style -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <!-- PC Glee Style -->
     <link rel="stylesheet" href="assets/css/pcglee-style.css">
     <!-- AngularJS -->
@@ -58,11 +59,19 @@ Using an API that provides github data for any user, youcan search for my profli
     <br>
     <br>
     <br>
-    <form name="searchUser" ng-submit="search(username)">
-        <input id="gitSearchIn" type="search" required placeholder="Username to find" ng-model="username" />
-        <input id="gitSearchButton" type="submit" value="Search">    
+    <form id="gitSearchForm" name="searchUser" ng-submit="search(username)">
+        <div class="col-md-4">
+        <div class="input-group">
+        <input id="gitSearchIn" class="form-control" type="search" required placeholder="Username to find" ng-model="username" />
+        <span class="input-group-btn">
+        <button class="btn btn-secondary" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+            </button>
+      </span>
+        </div>
+        </div>
     </form>
-    
+    <br>
 <div ng-include="'app/pages/templates/git-user-data.html'" ng-show="user"></div>
     
 </div>

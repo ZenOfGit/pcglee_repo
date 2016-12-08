@@ -10,6 +10,10 @@ h1 {
     font-weight: bold;
 }
 
+select {
+ background-color: #484848;   
+}
+
 .nav-pills > .active > a, .nav-pills > .active > a:hover {
     background-color: red;
 }
@@ -91,6 +95,17 @@ h1 {
     background-color: #484848;
     font-family: verdana, sans-serif;    
     border-style: solid;
+    border-color: #ADFF2F;
+}
+
+.form-control{
+    border: 1px solid #ADFF2F;
+    color: #ADFF2F;
+    background-color: #484848;
+}
+
+.input-group-btn {
+    color: #484848;
 }
 
 .icon {
@@ -100,6 +115,8 @@ h1 {
 	height: 1em;
 	fill: currentColor;
 }
+
+
 
 .icon-education {
   /* Using currentColor above lets
@@ -165,3 +182,4 @@ h1 {
   to change the size of our icon: */
   font-size: 48px;
 }
+
