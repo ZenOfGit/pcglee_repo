@@ -54,6 +54,18 @@ angular.module('pcGlee')  //  This works without declaration unlike the controll
         templateUrl: 'app/pages/templates/about-icons.html'
         };
     })
+        .directive('appIcons', function(){
+    return{
+        restrict: 'E',
+        templateUrl: 'app/pages/templates/app-icons.html'
+        };
+    })
+        .directive('ratelinx', function(){
+    return{
+        restrict: 'E',
+        templateUrl: 'app/pages/templates/work-xp/ratelinx.html'
+        };
+    })  
         .directive('lts', function(){
     return{
         restrict: 'E',

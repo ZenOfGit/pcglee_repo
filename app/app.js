@@ -24,8 +24,6 @@ var app = angular.module('pcGlee', []);
         };
     });
     
-
-
    app.controller('PedalController', [ '$http', function($http){
        //this.products = schmata;  // this inside of tht callback is teh service 
        var gear = this;
@@ -36,8 +34,6 @@ var app = angular.module('pcGlee', []);
            gear.stompBoxes = pedalData;
        });
    }]);  
-
-
 
     
 /*    var pedals = [

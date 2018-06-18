@@ -31,40 +31,49 @@
             <div class="container">
             <div class="jumbotron jumbotron-fluid">
 
-
                 <div ng-show=" views.isSelected(1) ">
-                    <img src="assets/images/hg.png" alt="Healthgrades" style="width:455px;height:95px;">
+                    <img src="assets/images/ratelinx.png" alt="Lakes Technology Specialists" style="width:455px;height:95px;">
                 </div>
                 <div ng-show=" views.isSelected(2) ">
-                    <img src="assets/images/cdsc.png" alt="Collaborative" style="width:455px;height:95px;">
+                    <img src="assets/images/hg.png" alt="Healthgrades" style="width:455px;height:95px;">
                 </div>
                 <div ng-show=" views.isSelected(3) ">
+                    <img src="assets/images/cdsc.png" alt="Collaborative" style="width:455px;height:95px;">
+                </div>
+                <div ng-show=" views.isSelected(4) ">
                     <img src="assets/images/lts.jpg" alt="Lakes Technology Specialists" style="width:455px;height:95px;">
                 </div>
-                </div>
+            </div>
     
         <ul class="nav nav-pills">
             <!-- If true, set class to active -->
             <li ng-class="{ active: views.isSelected(1) }">
-            <a href ng-click="views.selectTab(1)">Healthgrades</a>
-            </li>
+            <a href ng-click="views.selectTab(1)">Ratelinx</a>
+            </li>            
             <li ng-class="{ active: views.isSelected(2) }">
-            <a href ng-click="views.selectTab(2)">Collaborative</a>
+            <a href ng-click="views.selectTab(2)">Healthgrades</a>
             </li>
             <li ng-class="{ active: views.isSelected(3) }">
-            <a href ng-click="views.selectTab(3)">Lakes Technology Specialists</a>
+            <a href ng-click="views.selectTab(3)">Collaborative</a>
+            </li>
+            <li ng-class="{ active: views.isSelected(4) }">
+            <a href ng-click="views.selectTab(4)">Lakes Technology Specialists</a>
         </li>
         </ul>
-    
-        <div class="content" ng-show=" views.isSelected(1) ">
+
+         <div class="content" ng-show=" views.isSelected(1) ">
+            <ratelinx></ratelinx>
+        </div>
+                
+        <div class="content" ng-show=" views.isSelected(2) ">
             <healthgrades></healthgrades>
         </div>
 
-        <div class="content" ng-show=" views.isSelected(2) ">
+        <div class="content" ng-show=" views.isSelected(3) ">
             <collab></collab>
         </div>
 
-        <div class="content" ng-show=" views.isSelected(3) ">
+        <div class="content" ng-show=" views.isSelected(4) ">
             <lts></lts>
         </div>
     </div>
