@@ -144,7 +144,7 @@ select {
   font-size: 48px;
 }
 
-.icon-linkedin {
+.icon-linkedinSvg {
   /* Using currentColor above lets
   us use `color` for changing the color
   of our icons: */
@@ -170,7 +170,7 @@ select {
   font-size: 48px;
 }
 
-.icon-github {
+.icon-git {
   /* Using currentColor above lets
   us use `color` for changing the color
   of our icons: */

@@ -27,11 +27,11 @@
 
     <section>
         <div class="container">
-
             <table border="0" width="700" cellspacing="0" cellpadding="0">
                 <tr>
                     <td>
-                        <font color="#ADFF2F" size="15">Github Search</td>
+                        <font color="#ADFF2F" size="15">Github Search</font>
+                    </td>
                 </tr>
                 <tr>
                     <td width="100%" bgcolor="#CC3300" height="2"></td>
@@ -39,10 +39,9 @@
             </table>
             <br>
             <br>
-
             <div ng-controller="GitController">
                 <br> Github Search
-                <br> Using an API that provides github data for any user, you can search for my proflie (zenofgit) and see my current account state; click <a href="http://www.github.com">here</a> to go and download/view the actual code at github.
+                <br> Using an API that provides github data for any user, you can search for my proflie (zenofgit) and see my current account state; click <a href="http://www.github.com">here</a> to log in and then download/view the actual code at github.
                 <br>
                 <br> Or try some of these interesting searches:
                 <br> angular
@@ -56,18 +55,18 @@
                 <form id="gitSearchForm" name="searchUser" ng-submit="search(username)">
                     <div class="col-md-4">
                         <div class="input-group">
-                            <input id="gitSearchIn" class="form-control" type="search" required placeholder="Username to find" ng-model="username" />
+                            <input id="gitSearchIn" class="form-control" type="search" required
+                                placeholder="Username to find" ng-model="username" />
                             <span class="input-group-btn">
-        <button class="btn btn-secondary" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
-            </button>
-      </span>
+                                <button class="btn btn-secondary" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </span>
                         </div>
                     </div>
                 </form>
                 <br>
                 <div ng-include="'app/pages/templates/git-user-data.html'" ng-show="user"></div>
-
             </div>
         </div>
     </section>

@@ -6,30 +6,6 @@ angular.module('pcGlee')  //  This works without declaration unlike the controll
         templateUrl: 'app/pages/templates/nav-template.html'
         };
     })
-        .directive('hulkAndThor', function(){
-    return{
-        restrict: 'E',
-        templateUrl: 'app/pages/templates/code-ex/hulk-and-thor.html'
-        };
-    })
-        .directive('timeAndDate', function(){
-    return{
-        restrict: 'E',
-        templateUrl: 'app/pages/templates/code-ex/time-and-date.html'
-        };
-    })
-        .directive('timeAndDate', function(){
-    return{
-        restrict: 'E',
-        templateUrl: 'app/pages/templates/code-ex/jake.html'
-        };
-    })    
-        .directive('bingo', function(){
-    return{
-        restrict: 'E',
-        templateUrl: 'app/pages/templates/code-ex/bingo.html'
-        };
-    }) 
         .directive('miamiU', function(){
     return{
         restrict: 'E',
@@ -101,21 +77,4 @@ angular.module('pcGlee')  //  This works without declaration unlike the controll
         restrict: 'E',
         templateUrl: 'app/pages/templates/hobbies/skiing.html'
         };
-    })
-        .directive('pedalCard', function(){
-    return {
-        restrict: 'E',
-        templateUrl: 'app/pages/templates/pedal-card.html',
-        scope: {
-            header: "=",  //tell angular we are passing a string, could use = or string
-            icon: "="
-        }
-/*        controller: function($scope){
-            $scope.header = 'Pedal Header';
-        }*/
-/*        controller: function(){
-            this.header = 'Pedal Header';
-        },
-        controllerAs: 'card'*/
-    };
-});
+    });
